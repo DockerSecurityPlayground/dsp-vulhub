@@ -1,0 +1,9 @@
+version: '2'
+services:
+ nginx:
+   image: vulhub/nginx:heartbleed
+   volumes:
+    - ./www:/var/www/html
+   ports:
+    - "80:80"
+    - "443:443"
